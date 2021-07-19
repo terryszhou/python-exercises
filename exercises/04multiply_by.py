@@ -11,10 +11,16 @@
 #
 # > [5, 10, 15]
 
-def multiply_by(arr, x):
-    newArr = []
-    for i in arr:
-        newArr.append(i * x)
-    print(newArr)
+def multiply_by(li, num):
+    new_li = []
+    for i in li:
+        new_li.append(i * num)
+    print(new_li)
+
+# OTHER SOLVE
+# def multiply_by(li, num):
+#     for i in range(len(li)):
+#         li[i] *= num
+#     print(li)
 
 multiply_by([1, 2, 3], 5)

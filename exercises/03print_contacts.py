@@ -21,8 +21,17 @@ contacts = {
     'Daniel': '777-777-7777'
 }
 
-def print_contacts(dic):
-    for i in dic:
-        print("{} has a phone number of {}".format(i, dic[i]))
+# def print_contacts(dict):
+#     for i in dict:
+#         # .format() old method
+#         print("{} has a phone number of {}".format(i, dict[i]))
+#         # formatted string literals
+#         print(f"{i} has a phone number of {dict[i]}")
 
-print_contacts(contacts)
+# def print_contacts(dict):
+#     for name, number in dict.items():
+#         print(f"{name} has a number of {number}")
+
+# print_contacts(contacts)
+
+print(contacts.items())

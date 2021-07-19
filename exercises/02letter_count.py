@@ -38,12 +38,29 @@
 #
 # > {'a': 3, 'b': 1, 'n': 3}
 
+# WRONG SOLVE
+# def letter_count(str):
+#     dd = {}
+#     for letter in str:
+#         dd[letter] = 1
+#     if letter in dd:
+#         dd[letter] += 1
+#     print(dd)
+
+# NEW SOLVE
+# def letter_count(str):
+#     dd = {}
+#     for letter in str:
+#         dd[letter] = str.count(letter)
+#     print(dd)
+
+# NEW SOLVE 2
 def letter_count(str):
     dd = {}
     for letter in str:
-        dd[letter] = 1
-    if letter in dd:
-        dd[letter] += 1
+        dd[letter] = dd.get(letter, 0) + 1
     print(dd)
 
+
 letter_count("alpha")
+letter_count("banana")
