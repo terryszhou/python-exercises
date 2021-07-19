@@ -12,9 +12,15 @@
 #
 # dd = {}
 # dd["foo"] = 1
+
+# print(dd)
+
+
 # dd["foo"] += 1
 # if "foo" in dd:
-#   print(dd["foo"])
+#     print(dd["foo"])
+
+# print(dd)
 #
 # Careful. Python requires that you insert a key into a dictionary
 # before you try to modify it's value. If you try to access a dictionary
@@ -31,3 +37,13 @@
 # letter_count('banana')
 #
 # > {'a': 3, 'b': 1, 'n': 3}
+
+def letter_count(str):
+    dd = {}
+    for letter in str:
+        dd[letter] = 1
+    if letter in dd:
+        dd[letter] += 1
+    print(dd)
+
+letter_count("alpha")
